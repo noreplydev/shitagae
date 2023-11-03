@@ -42,9 +42,9 @@ def moveX(client, deg):
     # Check if the publish was successful
     status = result.rc
     if status == 0:
-        print(f"Send `{result}` to topic `{xTopic}` successfully")
+        print(f"[MQTT] Send `{result}` to topic `{xTopic}` successfully")
     else:
-        print(f"Failed to send message to topic {xTopic}")
+        print(f"[MQTT] Failed to send message to topic {xTopic}")
 
 
 def moveY(client, deg):
@@ -53,9 +53,9 @@ def moveY(client, deg):
     # Check if the publish was successful
     status = result.rc
     if status == 0:
-        print(f"Send `{result}` to topic `{yTopic}` successfully")
+        print(f"[MQTT] Send `{result}` to topic `{yTopic}` successfully")
     else:
-        print(f"Failed to send message to topic {yTopic}")
+        print(f"[MQTT] Failed to send message to topic {yTopic}")
 
 
 print("[MQTT] Connecting to MQTT Broker...")
